@@ -1,0 +1,352 @@
+{
+  "grouped_validation": {
+    "training_rows": 150,
+    "validation_rows": 50,
+    "split": "Seeds 0-5 per category train; seeds 6-7 per category validate. No shared seed family.",
+    "classification_report": {
+      "air_compressor": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "packaging_box": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 10.0
+      },
+      "safety_glove": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 10.0
+      },
+      "solar_panel": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1-score": 0.5714285714285714,
+        "support": 10.0
+      },
+      "water_pump": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 10.0
+      },
+      "accuracy": 0.7,
+      "macro avg": {
+        "precision": 0.8800000000000001,
+        "recall": 0.7,
+        "f1-score": 0.7142857142857142,
+        "support": 50.0
+      },
+      "weighted avg": {
+        "precision": 0.88,
+        "recall": 0.7,
+        "f1-score": 0.7142857142857142,
+        "support": 50.0
+      }
+    },
+    "labels": [
+      "air_compressor",
+      "packaging_box",
+      "safety_glove",
+      "solar_panel",
+      "water_pump"
+    ],
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        5
+      ]
+    ],
+    "limitation": "Synthetic sanity check only; templates and vocabulary are authored and do not represent real traffic."
+  },
+  "shipped_model_training_rows": 200,
+  "feature_count": 1687,
+  "top_learned_features": {
+    "air_compressor": [
+      {
+        "feature": "word__air",
+        "weight": 1.5407
+      },
+      {
+        "feature": "word__compressor",
+        "weight": 1.5053
+      },
+      {
+        "feature": "word__air compressor",
+        "weight": 1.1004
+      },
+      {
+        "feature": "word__machine",
+        "weight": 0.9608
+      },
+      {
+        "feature": "word__\u090f\u092f\u0930 \u0938\u0930",
+        "weight": 0.8575
+      },
+      {
+        "feature": "word__\u0938\u0930",
+        "weight": 0.8575
+      },
+      {
+        "feature": "word__\u092e\u0936",
+        "weight": 0.8575
+      },
+      {
+        "feature": "word__\u0938\u0930 \u092e\u0936",
+        "weight": 0.8575
+      },
+      {
+        "feature": "word__\u090f\u092f\u0930",
+        "weight": 0.8575
+      },
+      {
+        "feature": "char__mpre",
+        "weight": 0.8125
+      },
+      {
+        "feature": "char__ress",
+        "weight": 0.8125
+      },
+      {
+        "feature": "char__res",
+        "weight": 0.8125
+      }
+    ],
+    "packaging_box": [
+      {
+        "feature": "word__carton",
+        "weight": 1.2598
+      },
+      {
+        "feature": "word__corrugated",
+        "weight": 1.2435
+      },
+      {
+        "feature": "word__\u0917\u0924",
+        "weight": 1.2258
+      },
+      {
+        "feature": "word__boxes",
+        "weight": 1.0582
+      },
+      {
+        "feature": "word__ply",
+        "weight": 0.9053
+      },
+      {
+        "feature": "char__ car",
+        "weight": 0.835
+      },
+      {
+        "feature": "char__ ca",
+        "weight": 0.835
+      },
+      {
+        "feature": "char__car",
+        "weight": 0.835
+      },
+      {
+        "feature": "word__corrugated boxes",
+        "weight": 0.7807
+      },
+      {
+        "feature": "char__ cart",
+        "weight": 0.7175
+      },
+      {
+        "feature": "char__carto",
+        "weight": 0.7175
+      },
+      {
+        "feature": "char__cart",
+        "weight": 0.7175
+      }
+    ],
+    "safety_glove": [
+      {
+        "feature": "word__gloves",
+        "weight": 2.0168
+      },
+      {
+        "feature": "word__gloves for",
+        "weight": 1.0394
+      },
+      {
+        "feature": "word__safety gloves",
+        "weight": 1.015
+      },
+      {
+        "feature": "word__safety",
+        "weight": 1.015
+      },
+      {
+        "feature": "word__\u0930\u0915 \u0926\u0938",
+        "weight": 1.0073
+      },
+      {
+        "feature": "word__\u0930\u0915",
+        "weight": 1.0073
+      },
+      {
+        "feature": "word__\u0926\u0938",
+        "weight": 1.0073
+      },
+      {
+        "feature": "char__lov",
+        "weight": 0.8468
+      },
+      {
+        "feature": "char__love",
+        "weight": 0.8468
+      },
+      {
+        "feature": "char__glove",
+        "weight": 0.8468
+      },
+      {
+        "feature": "char__ glov",
+        "weight": 0.8468
+      },
+      {
+        "feature": "char__ves ",
+        "weight": 0.8468
+      }
+    ],
+    "solar_panel": [
+      {
+        "feature": "word__solar",
+        "weight": 1.6713
+      },
+      {
+        "feature": "word__panels",
+        "weight": 0.9233
+      },
+      {
+        "feature": "word__panel",
+        "weight": 0.8004
+      },
+      {
+        "feature": "word__\u0932\u0930",
+        "weight": 0.8
+      },
+      {
+        "feature": "word__\u0932\u0930 \u091c\u0932",
+        "weight": 0.8
+      },
+      {
+        "feature": "word__\u091c\u0932",
+        "weight": 0.8
+      },
+      {
+        "feature": "word__\u091c\u0932 \u0928\u0932",
+        "weight": 0.8
+      },
+      {
+        "feature": "word__\u0928\u0932",
+        "weight": 0.8
+      },
+      {
+        "feature": "char__ sol",
+        "weight": 0.7731
+      },
+      {
+        "feature": "char__sol",
+        "weight": 0.7731
+      },
+      {
+        "feature": "char__lar ",
+        "weight": 0.7731
+      },
+      {
+        "feature": "char__sola",
+        "weight": 0.7731
+      }
+    ],
+    "water_pump": [
+      {
+        "feature": "word__pump",
+        "weight": 1.9467
+      },
+      {
+        "feature": "word__\u091f\u0930",
+        "weight": 1.3492
+      },
+      {
+        "feature": "word__motor",
+        "weight": 1.124
+      },
+      {
+        "feature": "word__water",
+        "weight": 1.0469
+      },
+      {
+        "feature": "char__pump",
+        "weight": 0.8806
+      },
+      {
+        "feature": "char__ pum",
+        "weight": 0.8806
+      },
+      {
+        "feature": "char__ pu",
+        "weight": 0.8806
+      },
+      {
+        "feature": "char__ump",
+        "weight": 0.8806
+      },
+      {
+        "feature": "char__ pump",
+        "weight": 0.8806
+      },
+      {
+        "feature": "char__pum",
+        "weight": 0.8806
+      },
+      {
+        "feature": "word__pump for",
+        "weight": 0.861
+      },
+      {
+        "feature": "word__water pump",
+        "weight": 0.8215
+      }
+    ]
+  },
+  "calibration": "None. Scores are not real-world calibrated confidence."
+}

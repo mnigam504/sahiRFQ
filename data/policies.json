@@ -1,0 +1,64 @@
+{
+  "water_pump": {
+    "label": "Water pumps",
+    "unit": "pieces",
+    "critical": [
+      "pump_type",
+      "power_hp",
+      "phase"
+    ],
+    "fields": {
+      "pump_type": "Pump type",
+      "power_hp": "Power in HP",
+      "phase": "Electrical phase"
+    }
+  },
+  "packaging_box": {
+    "label": "Corrugated boxes",
+    "unit": "pieces",
+    "critical": [
+      "dimensions_mm",
+      "ply"
+    ],
+    "fields": {
+      "dimensions_mm": "Dimensions in mm (L x W x H)",
+      "ply": "Number of plies"
+    }
+  },
+  "safety_glove": {
+    "label": "Safety gloves",
+    "unit": "pairs",
+    "critical": [
+      "material",
+      "size"
+    ],
+    "fields": {
+      "material": "Glove material",
+      "size": "Glove size"
+    }
+  },
+  "solar_panel": {
+    "label": "Solar panels",
+    "unit": "pieces",
+    "critical": [
+      "wattage",
+      "cell_type"
+    ],
+    "fields": {
+      "wattage": "Rated wattage",
+      "cell_type": "Cell type"
+    }
+  },
+  "air_compressor": {
+    "label": "Air compressors",
+    "unit": "pieces",
+    "critical": [
+      "pressure_bar",
+      "tank_l"
+    ],
+    "fields": {
+      "pressure_bar": "Required pressure in bar",
+      "tank_l": "Tank capacity in litres"
+    }
+  }
+}

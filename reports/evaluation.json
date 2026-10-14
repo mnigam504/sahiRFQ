@@ -1,0 +1,822 @@
+{
+  "summary": {
+    "total": 48,
+    "passed": 48,
+    "supported_category_cases": 45,
+    "raw_category_accuracy_percent": 100.0,
+    "fully_specified_cases": 29,
+    "shortlist_records_checked": 23,
+    "shortlist_violations": 0,
+    "constraint_violation_rate_percent": 0.0,
+    "baseline_records_checked": 87,
+    "baseline_violations": 64,
+    "baseline_constraint_violation_rate_percent": 73.56,
+    "mean_compatible_recall_at3": 1.0,
+    "baseline_mean_compatible_recall_at3": 1.0,
+    "warm_latency_median_ms": 2.01,
+    "warm_latency_p95_ms": 2.54,
+    "latency_samples": 144
+  },
+  "scenarios": [
+    {
+      "id": "P01",
+      "label": "Hinglish + phase + budget",
+      "text": "Agra ke liye 3 pieces 2 HP single phase submersible pump chahiye under Rs 10000 per unit within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P01"
+      ],
+      "observed_shortlist": [
+        "P01"
+      ],
+      "baseline_top3": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P02",
+      "label": "Buyer asks for local dispatch",
+      "text": "3 pieces 2 HP single phase submersible pump delivery Agra local only within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P01"
+      ],
+      "observed_shortlist": [
+        "P01"
+      ],
+      "baseline_top3": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P03",
+      "label": "Low power monoblock",
+      "text": "Need 1 piece 1 HP single phase monoblock water pump Agra within 3 days under INR 5000 each",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P03"
+      ],
+      "observed_shortlist": [
+        "P03"
+      ],
+      "baseline_top3": [
+        "P03",
+        "P04",
+        "P01"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P04",
+      "label": "Different pump subtype",
+      "text": "Need 2 pieces 2 HP single phase monoblock water pump Jaipur within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P04"
+      ],
+      "observed_shortlist": [
+        "P04"
+      ],
+      "baseline_top3": [
+        "P04",
+        "P03",
+        "P01"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P05",
+      "label": "Three phase requested",
+      "text": "4 pieces 2 HP three phase submersible water pump Noida within 6 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P02"
+      ],
+      "observed_shortlist": [
+        "P02"
+      ],
+      "baseline_top3": [
+        "P02",
+        "P01",
+        "P05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P06",
+      "label": "Supplier MOQ above buyer quantity",
+      "text": "1 piece 2 HP three phase submersible water pump Noida within 6 days",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "P02",
+        "P01",
+        "P05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P07",
+      "label": "Total budget excludes apparent matches",
+      "text": "3 pieces 2 HP single phase submersible pump Agra within 7 days budget Rs 25000 total",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P08",
+      "label": "No invented electrical phase",
+      "text": "Need 3 pieces 2 HP submersible pump Agra within 7 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P09",
+      "label": "Bare pump request",
+      "text": "pump chahiye",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P10",
+      "label": "Conflicting power values",
+      "text": "Need 3 pieces 1 HP 2 HP single phase submersible pump Agra within 7 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P11",
+      "label": "Price scope unspecified",
+      "text": "Need 3 pieces 2 HP single phase submersible pump Agra budget Rs 10000",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P12",
+      "label": "Unsupported pump domain",
+      "text": "Need 3 pieces hydraulic pump Agra",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P13",
+      "label": "Supplier phase unknown never confirmed",
+      "text": "3 pieces 2 HP three phase submersible pump Delhi under Rs 8500 per unit within 7 days",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "P02",
+        "P06",
+        "P01"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "P14",
+      "label": "Negative language requires review",
+      "text": "Need 3 pieces submersible pump 2 HP single phase Agra not three phase",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B01",
+      "label": "Convert cm to mm",
+      "text": "1000 boxes 5 ply corrugated 30 x 20 x 15 cm delivery Delhi under Rs 30 per box within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "B01"
+      ],
+      "observed_shortlist": [
+        "B01"
+      ],
+      "baseline_top3": [
+        "B01",
+        "B06",
+        "B05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B02",
+      "label": "Small batch price tradeoff",
+      "text": "200 boxes 5 ply corrugated 300x200x150 mm Pune within 5 days under Rs 35 per box",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "B04"
+      ],
+      "observed_shortlist": [
+        "B04"
+      ],
+      "baseline_top3": [
+        "B01",
+        "B04",
+        "B05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B03",
+      "label": "Three ply carton",
+      "text": "200 boxes 3 ply corrugated 300x200x150 mm Agra within 4 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "B02"
+      ],
+      "observed_shortlist": [
+        "B02"
+      ],
+      "baseline_top3": [
+        "B02",
+        "B01",
+        "B05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B04",
+      "label": "Different inside dimensions",
+      "text": "600 boxes 5 ply corrugated 400x300x200 mm Noida within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "B03"
+      ],
+      "observed_shortlist": [
+        "B03"
+      ],
+      "baseline_top3": [
+        "B03",
+        "B01",
+        "B02"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B05",
+      "label": "Too small for all known-size suppliers",
+      "text": "20 boxes 5 ply corrugated 300x200x150 mm Delhi within 7 days",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "B01",
+        "B02",
+        "B05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B06",
+      "label": "Missing dimensions",
+      "text": "1000 corrugated boxes 5 ply Delhi within 7 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B07",
+      "label": "Dimensions with no measurement unit",
+      "text": "1000 boxes 5 ply corrugated 300x200x150 Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B08",
+      "label": "Unsupported weight pricing conversion",
+      "text": "100 kg 5 ply corrugated boxes 300x200x150 mm Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B09",
+      "label": "Numeric k suffix",
+      "text": "2k boxes 5 ply corrugated 300x200x150 mm Delhi within 7 days under Rs 30 per box",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "B01"
+      ],
+      "observed_shortlist": [
+        "B01"
+      ],
+      "baseline_top3": [
+        "B01",
+        "B05",
+        "B02"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "B10",
+      "label": "Local-only supplier mismatch",
+      "text": "600 boxes 5 ply corrugated 400x300x200 mm Agra local only within 7 days",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "B03",
+        "B02",
+        "B01"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G01",
+      "label": "Correct pair price unit",
+      "text": "100 pairs large nitrile safety gloves Delhi within 4 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "G06",
+        "G01"
+      ],
+      "observed_shortlist": [
+        "G01",
+        "G06"
+      ],
+      "baseline_top3": [
+        "G01",
+        "G06",
+        "G05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G02",
+      "label": "Medium latex",
+      "text": "100 pairs medium latex safety gloves Agra within 5 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "G02"
+      ],
+      "observed_shortlist": [
+        "G02"
+      ],
+      "baseline_top3": [
+        "G02",
+        "G01",
+        "G04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G03",
+      "label": "Medium nitrile",
+      "text": "100 pairs size M nitrile gloves Noida within 3 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "G04"
+      ],
+      "observed_shortlist": [
+        "G04"
+      ],
+      "baseline_top3": [
+        "G06",
+        "G04",
+        "G01"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G04",
+      "label": "Non-sterile explicitly required",
+      "text": "100 pairs large nitrile gloves Delhi non-sterile within 4 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "G01"
+      ],
+      "observed_shortlist": [
+        "G01"
+      ],
+      "baseline_top3": [
+        "G06",
+        "G01",
+        "G05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G05",
+      "label": "Sterility not established",
+      "text": "100 pairs large nitrile gloves Delhi sterile within 4 days",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "G06",
+        "G01",
+        "G05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G06",
+      "label": "Pieces vs pair mismatch",
+      "text": "100 pieces large nitrile gloves Delhi within 4 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G07",
+      "label": "Unmodeled medical requirement",
+      "text": "100 pairs large nitrile medical gloves Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "G08",
+      "label": "Missing glove size",
+      "text": "100 pairs nitrile gloves Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S01",
+      "label": "Mono panel correct capacity",
+      "text": "5 pieces solar panels 550 W mono Delhi within 10 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "S01"
+      ],
+      "observed_shortlist": [
+        "S01"
+      ],
+      "baseline_top3": [
+        "S01",
+        "S06",
+        "S04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S02",
+      "label": "Poly panel",
+      "text": "10 pieces 330 watt poly solar panels Delhi within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "S02"
+      ],
+      "observed_shortlist": [
+        "S02"
+      ],
+      "baseline_top3": [
+        "S02",
+        "S05",
+        "C03"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S03",
+      "label": "450 watt requirement",
+      "text": "4 pieces 450 W monocrystalline solar panels Jaipur within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "S03"
+      ],
+      "observed_shortlist": [
+        "S03"
+      ],
+      "baseline_top3": [
+        "S03",
+        "S01",
+        "S04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S04",
+      "label": "Unspecified technology",
+      "text": "5 pieces solar panels 550 W Delhi within 10 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S05",
+      "label": "Budget scope is total",
+      "text": "5 pieces solar panels 550 W mono Delhi within 10 days budget Rs 50000 total",
+      "expected_status": "no_confirmed_match",
+      "observed_status": "no_confirmed_match",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [
+        "S01",
+        "S06",
+        "S04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "S06",
+      "label": "Unmodeled certification",
+      "text": "5 pieces 550 W mono solar panels Delhi certified",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "C01",
+      "label": "100 litre compressor",
+      "text": "2 pieces 8 bar 100 litre air compressor Delhi within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "C01"
+      ],
+      "observed_shortlist": [
+        "C01"
+      ],
+      "baseline_top3": [
+        "C01",
+        "C06",
+        "C04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "C02",
+      "label": "50 litre compressor",
+      "text": "1 piece 8 bar 50 litre air compressor Agra within 4 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "C02"
+      ],
+      "observed_shortlist": [
+        "C02"
+      ],
+      "baseline_top3": [
+        "C02",
+        "C01",
+        "C05"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "C03",
+      "label": "10 bar compressor",
+      "text": "1 piece 10 bar 100 litre air compressor Noida within 8 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "C03"
+      ],
+      "observed_shortlist": [
+        "C03"
+      ],
+      "baseline_top3": [
+        "C03",
+        "C01",
+        "C04"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "C04",
+      "label": "Pressure missing",
+      "text": "1 piece 100 litre air compressor Delhi within 7 days",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "C05",
+      "label": "Pressure units unsupported",
+      "text": "1 piece 120 PSI 100 litre air compressor Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "X01",
+      "label": "Unsupported product",
+      "text": "Need 500 kg aluminium ingots Pune",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "X02",
+      "label": "Multiple product lines",
+      "text": "Need 2 water pumps and 5 solar panels Delhi",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "X03",
+      "label": "Zero quantity",
+      "text": "0 pieces 2 HP single phase submersible water pump Agra",
+      "expected_status": "clarification_needed",
+      "observed_status": "clarification_needed",
+      "expected_shortlist": [],
+      "observed_shortlist": [],
+      "baseline_top3": [],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "X04",
+      "label": "Human answers complete an enquiry",
+      "text": "Agra ke liye 3 pieces pump chahiye within 7 days budget Rs 10000 per unit",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P01"
+      ],
+      "observed_shortlist": [
+        "P01"
+      ],
+      "baseline_top3": [
+        "P01",
+        "P03",
+        "P06"
+      ],
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "X05",
+      "label": "Limited Devanagari routing",
+      "text": "3 नग 2 HP single phase submersible पानी पंप Agra within 7 days",
+      "expected_status": "ready_for_supplier_confirmation",
+      "observed_status": "ready_for_supplier_confirmation",
+      "expected_shortlist": [
+        "P01"
+      ],
+      "observed_shortlist": [
+        "P01"
+      ],
+      "baseline_top3": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "method": {
+    "dataset": "Separately authored fictional regression scenarios. Reviewed during development; not an untouched test set.",
+    "baseline": "Word TF-IDF top 3, without category routing or constraint checks. Not an IndiaMART benchmark.",
+    "constraint_truth": "Independent, authored compatible record ID sets in evaluation_cases.json.",
+    "recall": "Per nonempty compatible set, |top3 intersect compatible| / min(3, |compatible|); then mean.",
+    "timing": "Warm local matching, three repetitions per request; no network or LLM call; excludes training/startup.",
+    "llm": "Optional live provider performance is not measured. Provider responses are tested using mocks."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "system": "Linux"
+  },
+  "fingerprints": {
+    "catalog": "621e6b790380",
+    "evaluation": "e278d781bf7776b4440d4ba09933e4419afc2bc6a144ffeeb10e81de200e091f"
+  }
+}

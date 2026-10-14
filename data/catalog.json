@@ -1,0 +1,674 @@
+[
+  {
+    "id": "P01",
+    "category": "water_pump",
+    "title": "2 HP single phase submersible pump",
+    "supplier": "Demo Supplier P01",
+    "dispatch_city": "Agra",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 9800,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 4,
+    "specs": {
+      "pump_type": "submersible",
+      "power_hp": 2,
+      "phase": "single"
+    },
+    "source": "data/catalog.json#P01",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "P02",
+    "category": "water_pump",
+    "title": "2 HP three phase submersible pump",
+    "supplier": "Demo Supplier P02",
+    "dispatch_city": "Noida",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 9200,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 2,
+    "lead_days": 5,
+    "specs": {
+      "pump_type": "submersible",
+      "power_hp": 2,
+      "phase": "three"
+    },
+    "source": "data/catalog.json#P02",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "P03",
+    "category": "water_pump",
+    "title": "1 HP single phase monoblock pump",
+    "supplier": "Demo Supplier P03",
+    "dispatch_city": "Agra",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 4800,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 2,
+    "specs": {
+      "pump_type": "monoblock",
+      "power_hp": 1,
+      "phase": "single"
+    },
+    "source": "data/catalog.json#P03",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "P04",
+    "category": "water_pump",
+    "title": "2 HP single phase monoblock pump",
+    "supplier": "Demo Supplier P04",
+    "dispatch_city": "Jaipur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 8400,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 6,
+    "specs": {
+      "pump_type": "monoblock",
+      "power_hp": 2,
+      "phase": "single"
+    },
+    "source": "data/catalog.json#P04",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "P05",
+    "category": "water_pump",
+    "title": "2 HP single phase submersible pump - bulk",
+    "supplier": "Demo Supplier P05",
+    "dispatch_city": "Kanpur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 8700,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 10,
+    "lead_days": 9,
+    "specs": {
+      "pump_type": "submersible",
+      "power_hp": 2,
+      "phase": "single"
+    },
+    "source": "data/catalog.json#P05",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "P06",
+    "category": "water_pump",
+    "title": "2 HP submersible pump - phase unspecified",
+    "supplier": "Demo Supplier P06",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 8000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 3,
+    "specs": {
+      "pump_type": "submersible",
+      "power_hp": 2,
+      "phase": null
+    },
+    "source": "data/catalog.json#P06",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B01",
+    "category": "packaging_box",
+    "title": "5 ply corrugated box 300 x 200 x 150 mm",
+    "supplier": "Demo Supplier B01",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 28,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 500,
+    "lead_days": 5,
+    "specs": {
+      "dimensions_mm": "300x200x150",
+      "ply": 5
+    },
+    "source": "data/catalog.json#B01",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B02",
+    "category": "packaging_box",
+    "title": "3 ply corrugated carton 300 x 200 x 150 mm",
+    "supplier": "Demo Supplier B02",
+    "dispatch_city": "Agra",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 19,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 100,
+    "lead_days": 3,
+    "specs": {
+      "dimensions_mm": "300x200x150",
+      "ply": 3
+    },
+    "source": "data/catalog.json#B02",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B03",
+    "category": "packaging_box",
+    "title": "5 ply corrugated box 400 x 300 x 200 mm",
+    "supplier": "Demo Supplier B03",
+    "dispatch_city": "Noida",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 43,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 500,
+    "lead_days": 6,
+    "specs": {
+      "dimensions_mm": "400x300x200",
+      "ply": 5
+    },
+    "source": "data/catalog.json#B03",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B04",
+    "category": "packaging_box",
+    "title": "5 ply corrugated box 300 x 200 x 150 mm - small batches",
+    "supplier": "Demo Supplier B04",
+    "dispatch_city": "Pune",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 33,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 100,
+    "lead_days": 4,
+    "specs": {
+      "dimensions_mm": "300x200x150",
+      "ply": 5
+    },
+    "source": "data/catalog.json#B04",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B05",
+    "category": "packaging_box",
+    "title": "5 ply corrugated box 300 x 200 x 150 mm - bulk",
+    "supplier": "Demo Supplier B05",
+    "dispatch_city": "Jaipur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 24,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 2000,
+    "lead_days": 10,
+    "specs": {
+      "dimensions_mm": "300x200x150",
+      "ply": 5
+    },
+    "source": "data/catalog.json#B05",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "B06",
+    "category": "packaging_box",
+    "title": "5 ply custom corrugated box - size pending",
+    "supplier": "Demo Supplier B06",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 23,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 100,
+    "lead_days": 4,
+    "specs": {
+      "dimensions_mm": null,
+      "ply": 5
+    },
+    "source": "data/catalog.json#B06",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G01",
+    "category": "safety_glove",
+    "title": "Large nitrile industrial safety gloves",
+    "supplier": "Demo Supplier G01",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 45,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 50,
+    "lead_days": 3,
+    "specs": {
+      "material": "nitrile",
+      "size": "L",
+      "sterile": false
+    },
+    "source": "data/catalog.json#G01",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G02",
+    "category": "safety_glove",
+    "title": "Medium latex safety gloves",
+    "supplier": "Demo Supplier G02",
+    "dispatch_city": "Agra",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 32,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 100,
+    "lead_days": 4,
+    "specs": {
+      "material": "latex",
+      "size": "M",
+      "sterile": false
+    },
+    "source": "data/catalog.json#G02",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G03",
+    "category": "safety_glove",
+    "title": "Large cotton industrial gloves",
+    "supplier": "Demo Supplier G03",
+    "dispatch_city": "Jaipur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 18,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 100,
+    "lead_days": 5,
+    "specs": {
+      "material": "cotton",
+      "size": "L",
+      "sterile": false
+    },
+    "source": "data/catalog.json#G03",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G04",
+    "category": "safety_glove",
+    "title": "Medium nitrile industrial gloves",
+    "supplier": "Demo Supplier G04",
+    "dispatch_city": "Noida",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 44,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 50,
+    "lead_days": 2,
+    "specs": {
+      "material": "nitrile",
+      "size": "M",
+      "sterile": false
+    },
+    "source": "data/catalog.json#G04",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G05",
+    "category": "safety_glove",
+    "title": "Large nitrile industrial gloves - bulk",
+    "supplier": "Demo Supplier G05",
+    "dispatch_city": "Pune",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 39,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1000,
+    "lead_days": 8,
+    "specs": {
+      "material": "nitrile",
+      "size": "L",
+      "sterile": false
+    },
+    "source": "data/catalog.json#G05",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "G06",
+    "category": "safety_glove",
+    "title": "Large nitrile gloves - sterility unspecified",
+    "supplier": "Demo Supplier G06",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 42,
+    "price_unit": "pairs",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 50,
+    "lead_days": 3,
+    "specs": {
+      "material": "nitrile",
+      "size": "L",
+      "sterile": null
+    },
+    "source": "data/catalog.json#G06",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S01",
+    "category": "solar_panel",
+    "title": "550 W monocrystalline solar panel",
+    "supplier": "Demo Supplier S01",
+    "dispatch_city": "Noida",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 12000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 2,
+    "lead_days": 7,
+    "specs": {
+      "wattage": 550,
+      "cell_type": "mono"
+    },
+    "source": "data/catalog.json#S01",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S02",
+    "category": "solar_panel",
+    "title": "330 W polycrystalline solar panel",
+    "supplier": "Demo Supplier S02",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 6800,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 5,
+    "lead_days": 5,
+    "specs": {
+      "wattage": 330,
+      "cell_type": "poly"
+    },
+    "source": "data/catalog.json#S02",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S03",
+    "category": "solar_panel",
+    "title": "450 W monocrystalline solar panel",
+    "supplier": "Demo Supplier S03",
+    "dispatch_city": "Jaipur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 9900,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 2,
+    "lead_days": 6,
+    "specs": {
+      "wattage": 450,
+      "cell_type": "mono"
+    },
+    "source": "data/catalog.json#S03",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S04",
+    "category": "solar_panel",
+    "title": "550 W monocrystalline panel - large orders",
+    "supplier": "Demo Supplier S04",
+    "dispatch_city": "Pune",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 11300,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 20,
+    "lead_days": 12,
+    "specs": {
+      "wattage": 550,
+      "cell_type": "mono"
+    },
+    "source": "data/catalog.json#S04",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S05",
+    "category": "solar_panel",
+    "title": "550 W polycrystalline solar panel",
+    "supplier": "Demo Supplier S05",
+    "dispatch_city": "Kanpur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 10800,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 5,
+    "lead_days": 8,
+    "specs": {
+      "wattage": 550,
+      "cell_type": "poly"
+    },
+    "source": "data/catalog.json#S05",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "S06",
+    "category": "solar_panel",
+    "title": "550 W solar module - technology unspecified",
+    "supplier": "Demo Supplier S06",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 10500,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 2,
+    "lead_days": 5,
+    "specs": {
+      "wattage": 550,
+      "cell_type": null
+    },
+    "source": "data/catalog.json#S06",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C01",
+    "category": "air_compressor",
+    "title": "8 bar 100 litre air compressor",
+    "supplier": "Demo Supplier C01",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 28000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 5,
+    "specs": {
+      "pressure_bar": 8,
+      "tank_l": 100
+    },
+    "source": "data/catalog.json#C01",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C02",
+    "category": "air_compressor",
+    "title": "8 bar 50 litre air compressor",
+    "supplier": "Demo Supplier C02",
+    "dispatch_city": "Agra",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 17000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 3,
+    "specs": {
+      "pressure_bar": 8,
+      "tank_l": 50
+    },
+    "source": "data/catalog.json#C02",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C03",
+    "category": "air_compressor",
+    "title": "10 bar 100 litre air compressor",
+    "supplier": "Demo Supplier C03",
+    "dispatch_city": "Noida",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 33000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 7,
+    "specs": {
+      "pressure_bar": 10,
+      "tank_l": 100
+    },
+    "source": "data/catalog.json#C03",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C04",
+    "category": "air_compressor",
+    "title": "8 bar 100 litre air compressor - bulk",
+    "supplier": "Demo Supplier C04",
+    "dispatch_city": "Jaipur",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 25500,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 5,
+    "lead_days": 10,
+    "specs": {
+      "pressure_bar": 8,
+      "tank_l": 100
+    },
+    "source": "data/catalog.json#C04",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C05",
+    "category": "air_compressor",
+    "title": "8 bar 200 litre air compressor",
+    "supplier": "Demo Supplier C05",
+    "dispatch_city": "Pune",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 44000,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 8,
+    "specs": {
+      "pressure_bar": 8,
+      "tank_l": 200
+    },
+    "source": "data/catalog.json#C05",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  },
+  {
+    "id": "C06",
+    "category": "air_compressor",
+    "title": "100 litre air compressor - pressure pending",
+    "supplier": "Demo Supplier C06",
+    "dispatch_city": "Delhi",
+    "ships_to": [
+      "all_india"
+    ],
+    "unit_price_inr": 24500,
+    "price_unit": "pieces",
+    "price_scope": "ex_tax_ex_freight",
+    "moq": 1,
+    "lead_days": 4,
+    "specs": {
+      "pressure_bar": null,
+      "tank_l": 100
+    },
+    "source": "data/catalog.json#C06",
+    "provenance": "fictional_demo",
+    "verified_on": null
+  }
+]

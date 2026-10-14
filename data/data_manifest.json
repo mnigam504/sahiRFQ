@@ -1,0 +1,10 @@
+{
+  "catalog_records": 30,
+  "training_records": 200,
+  "categories": 5,
+  "origin": "Authored fictional catalog and seed/template training requests. No IndiaMART internal data.",
+  "license": "MIT",
+  "evaluation_origin": "Separately authored scenario fixtures; not representative customer traffic.",
+  "split": "Training seeds/templates only; scenario evaluation is never fitted.",
+  "generated_on": "2026-10-14"
+}

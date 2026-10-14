@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SahiRFQ: an evidence-first B2B sourcing research prototype.">
+  <title>SahiRFQ · Sourcing lab</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="SahiRFQ home"><span class="mark">S</span><span>SahiRFQ<small>SOURCING LAB</small></span></a>
+    <div class="nav-label">WORKSPACE</div>
+    <button class="nav active" id="workflow-nav">01 <span>RFQ workspace</span></button>
+    <button class="nav" id="evaluation-nav">02 <span>Evaluation</span></button>
+    <div class="side-note"><span class="dot"></span> Runs locally<small>Supervised ML routing<br>Hybrid catalog retrieval<br>Field-level evidence checks</small></div>
+    <div class="sidebar-bottom">A portfolio prototype by<br><strong>Mayank Nigam</strong><br><span>VGSoM · IIT Kharagpur</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><span>APM PORTFOLIO <span class="slash">/</span> B2B COMMERCE</span><span class="tag neutral">Fictional demo data</span></header>
+    <section id="workflow-view">
+      <div class="heading"><div><p class="eyebrow">BETTER QUESTIONS. BETTER MATCHES.</p><h1>Make the next enquiry count.</h1><p class="subtitle">Clarify what the buyer needs. Check what the catalog can actually support.</p></div><div class="version">RESEARCH PROTOTYPE<span>v0.1</span></div></div>
+      <div class="workspace">
+        <section class="request-panel panel">
+          <div class="panel-top"><span class="step-badge">01</span><h2>Buyer requirement</h2></div>
+          <label class="label" for="request">Paste a request in English or Hinglish</label>
+          <textarea id="request" rows="7" maxlength="4000">Agra ke liye 3 pieces pump chahiye within 7 days. Budget Rs 10000 per unit.</textarea>
+          <button id="analyze" class="primary">Analyze requirement <span>↗</span></button>
+          <p class="hint">Every missing specification stays unknown until the buyer provides it.</p>
+          <div class="divider"></div><p class="label">TRY A SCENARIO</p>
+          <div id="presets" class="presets"></div>
+          <div class="divider"></div><div class="scope"><p class="label">FOCUSED SCOPE</p><p>Water pumps · Corrugated boxes · Safety gloves · Solar panels · Air compressors</p><small>Unmodeled specifications require manual review. Catalog prices exclude tax and freight.</small></div>
+          <p id="error" class="error" role="alert"></p>
+        </section>
+        <div class="results">
+          <section class="decision panel" aria-live="polite"><div><p class="eyebrow">RFQ READINESS</p><h2 id="decision-title">Analyzing your enquiry…</h2><p id="decision-copy">Checking category, buyer fields and catalog constraints.</p></div><span class="decision-icon" id="decision-icon">?</span></section>
+          <div id="metrics" class="metrics"></div>
+          <section id="clarify-panel" class="panel"><div class="panel-top"><span class="step-badge">02</span><h2>Ask before matching</h2><span class="micro" id="question-count"></span></div><p class="section-copy">Questions are ordered by missing-field priority and catalog diversity.</p><div id="questions" class="question-grid"></div><button id="clarify" class="secondary">Apply buyer answers</button></section>
+          <section id="warning-panel" class="warning hidden"><h3>Manual review required</h3><ul id="warnings"></ul></section>
+          <section class="panel"><div class="panel-top"><span class="step-badge">03</span><h2>Catalog evidence</h2><span class="micro" id="candidate-count"></span></div><p class="section-copy" id="match-copy">Candidate exploration appears here. A shortlist requires a complete RFQ.</p><div id="candidates"></div></section>
+          <section id="quote-panel" class="panel hidden"><div class="panel-top"><span class="step-badge">04</span><h2>Compare quote completeness</h2></div><p class="section-copy">Enter hypothetical or supplier-provided amounts. Blank tax or freight stays unknown.</p><div id="quote-inputs"></div><button class="secondary" id="compare-quotes">Compare entered quotes</button><div id="quote-result" aria-live="polite"></div></section>
+          <section class="panel"><div class="panel-top"><h2>Ask the catalog</h2><span class="tag neutral">Citations required</span></div><p class="section-copy">Try “What is the MOQ?” or ask about a record such as P01. Unsupported claims produce an abstention.</p><div class="ask-row"><input id="question" placeholder="What is the MOQ?" maxlength="1000" aria-label="Catalog question"><button class="secondary" id="ask">Ask</button></div><label class="check"><input type="checkbox" id="llm"> Use optional OpenAI structured RAG <span id="llm-state">(checking configuration)</span></label><pre id="answer" class="answer hidden"></pre><div id="citations" class="citations"></div></section>
+          <section class="panel"><div class="panel-top"><h2>Reviewable RFQ draft</h2><button class="text-button" id="download">Download .txt</button></div><details><summary>Open draft and execution trace</summary><pre id="draft"></pre><ol id="trace"></ol></details></section>
+        </div>
+      </div>
+    </section>
+    <section id="evaluation-view" class="hidden"><div class="heading"><div><p class="eyebrow">EVIDENCE BEFORE CLAIMS</p><h1>How this prototype is tested.</h1><p class="subtitle">Authored scenarios, explicit expected outcomes, reproducible local runs.</p></div></div><section class="panel"><p class="section-copy">These are regression checks on a small fictional dataset. They do not establish performance on IndiaMART traffic or business impact.</p><div id="evaluation-metrics" class="metrics"></div><h2>Scenario results</h2><div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Expected</th><th>Observed</th><th>Check</th></tr></thead><tbody id="evaluation-rows"></tbody></table></div><details><summary>Method and limitations</summary><p>The supervised router uses seed/template training examples. Evaluation cases are separately authored and never fitted. Constraint-aware shortlists are compared with a raw word TF-IDF baseline on fully specified scenarios. Repeated local timings measure warm inference, excluding startup/model fitting. This report has been used during development; it is a regression suite, not an untouched test set.</p></details></section></section>
+    <footer>Independent educational project. No affiliation with IndiaMART. No enquiry is sent and no order is placed.</footer>
+  </main><script src="/app.js"></script>
+</body></html>
