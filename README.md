@@ -6,7 +6,7 @@ SahiRFQ is an AI/ML B2B sourcing prototype built for an Assistant Product Manage
 
 Example: **“Agra ke liye 3 pieces pump chahiye.”** The system asks for pump type, power and electrical phase. After the buyer specifies a 2 HP single-phase submersible pump, it excludes three-phase products, checks MOQ and lead time, and flags catalogs where phase is unknown.
 
-**Scope:** 5 product categories, 30 fictional catalog records, 200 seed/template training examples, and 48 separately authored regression scenarios. No IndiaMART internal data or real supplier records are used. This is an independent educational project, with AI-assisted implementation, prepared for Mayank Nigam.
+**Scope:** 5 product categories, 30 fictional catalog records, 200 seed/template training examples, and 48 separately authored regression scenarios. No IndiaMART internal data or real supplier records are used. This is an independent educational project, with AI-assisted implementation, prepared by Mayank Nigam.
 
 ## What works
 
